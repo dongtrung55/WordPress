@@ -308,7 +308,7 @@ if ( ! function_exists( 'storefront_recent_products' ) ) {
 				'columns' => 4,
 				'orderby' => 'date',
 				'order'   => 'desc',
-				'title'   => __( 'New In', 'storefront' ),
+				'title'   => __( 'New Product', 'storefront' ),
 			)
 		);
 
@@ -381,19 +381,19 @@ if ( ! function_exists( 'storefront_featured_products' ) ) {
 		 * Only display the section if the shortcode returns products
 		 */
 		if ( false !== strpos( $shortcode_content, 'product' ) ) {
-			echo '<section class="storefront-product-section storefront-featured-products" aria-label="' . esc_attr__( 'Featured Products', 'storefront' ) . '">';
-
-			do_action( 'storefront_homepage_before_featured_products' );
-
-			echo '<h2 class="section-title">' . wp_kses_post( $args['title'] ) . '</h2>';
-
-			do_action( 'storefront_homepage_after_featured_products_title' );
-
-			echo $shortcode_content; // WPCS: XSS ok.
-
-			do_action( 'storefront_homepage_after_featured_products' );
-
-			echo '</section>';
+//			echo '<section class="storefront-product-section storefront-featured-products" aria-label="' . esc_attr__( 'Featured Products', 'storefront' ) . '">';
+//
+//			do_action( 'storefront_homepage_before_featured_products' );
+//
+//			echo '<h2 class="section-title">' . wp_kses_post( $args['title'] ) . '</h2>';
+//
+//			do_action( 'storefront_homepage_after_featured_products_title' );
+//
+//			echo $shortcode_content; // WPCS: XSS ok.
+//
+//			do_action( 'storefront_homepage_after_featured_products' );
+//
+//			echo '</section>';
 		}
 	}
 }
@@ -433,19 +433,19 @@ if ( ! function_exists( 'storefront_popular_products' ) ) {
 		 * Only display the section if the shortcode returns products
 		 */
 		if ( false !== strpos( $shortcode_content, 'product' ) ) {
-			echo '<section class="storefront-product-section storefront-popular-products" aria-label="' . esc_attr__( 'Popular Products', 'storefront' ) . '">';
-
-			do_action( 'storefront_homepage_before_popular_products' );
-
-			echo '<h2 class="section-title">' . wp_kses_post( $args['title'] ) . '</h2>';
-
-			do_action( 'storefront_homepage_after_popular_products_title' );
-
-			echo $shortcode_content; // WPCS: XSS ok.
-
-			do_action( 'storefront_homepage_after_popular_products' );
-
-			echo '</section>';
+//			echo '<section class="storefront-product-section storefront-popular-products" aria-label="' . esc_attr__( 'Popular Products', 'storefront' ) . '">';
+//
+//			do_action( 'storefront_homepage_before_popular_products' );
+//
+//			echo '<h2 class="section-title">' . wp_kses_post( $args['title'] ) . '</h2>';
+//
+//			do_action( 'storefront_homepage_after_popular_products_title' );
+//
+//			echo $shortcode_content; // WPCS: XSS ok.
+//
+//			do_action( 'storefront_homepage_after_popular_products' );
+//
+//			echo '</section>';
 		}
 	}
 }
